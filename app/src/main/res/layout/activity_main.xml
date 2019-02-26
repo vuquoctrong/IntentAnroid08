@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/tv_activityone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity One"
+        android:textSize="48sp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#bbff00"
+        android:background="#00b7ff"/>
+    <EditText
+        android:id="@+id/et_number1"
+        android:layout_below="@id/tv_activityone"
+        android:layout_marginTop="16dp"
+        android:hint="Number1"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_number2"
+        android:layout_above="@id/btn_clickMovetwo"
+        android:layout_marginBottom="32dp"
+        android:hint="Number2"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_clickMovetwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Click Move Activity two"
+        android:textSize="32sp"
+        android:textColor="#bbff00"
+        android:background="#ff2200"/>
+</RelativeLayout>

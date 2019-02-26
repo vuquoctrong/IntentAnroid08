@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/tv_activittwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity Two"
+        android:textSize="48sp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#bbff00"
+        android:background="#00b7ff"/>
+    <TextView
+        android:id="@+id/tv_sum"
+        android:layout_below="@id/tv_activittwo"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_clickbackone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Click Back Activity two"
+        android:textSize="32sp"
+        android:textColor="#2600ff"
+        android:background="#ffd900"/>
+</RelativeLayout>
