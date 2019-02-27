@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <dimen name="MActivity_tvsize_one">48sp</dimen>
+    <dimen name="MAcitvity_etOne_layout_marginTop">16dp</dimen>
+    <dimen name="MAcitvity_ettwo_layout_layout_marginBottom">32dp</dimen>
+    <dimen name="MActivity_btMove_textSize">32sp</dimen>
 </resources>

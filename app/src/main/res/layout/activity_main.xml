@@ -9,15 +9,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Activity One"
-        android:textSize="48sp"
-        android:layout_marginTop="16dp"
+        android:textSize="@dimen/MActivity_tvsize_one"
+        android:layout_marginTop="@dimen/MAcitvity_ettwo_layout_layout_marginBottom"
         android:layout_centerHorizontal="true"
         android:textColor="#bbff00"
         android:background="#00b7ff"/>
     <EditText
         android:id="@+id/et_number1"
         android:layout_below="@id/tv_activityone"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/MAcitvity_etOne_layout_marginTop"
         android:hint="Number1"
         android:layout_centerInParent="true"
         android:layout_width="wrap_content"
@@ -25,7 +25,7 @@
     <EditText
         android:id="@+id/et_number2"
         android:layout_above="@id/btn_clickMovetwo"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="@dimen/MAcitvity_ettwo_layout_layout_marginBottom"
         android:hint="Number2"
         android:layout_centerInParent="true"
         android:layout_width="wrap_content"
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:text="Click Move Activity two"
-        android:textSize="32sp"
+        android:textSize="@dimen/MActivity_btMove_textSize"
         android:textColor="#bbff00"
         android:background="#ff2200"/>
     <Button
