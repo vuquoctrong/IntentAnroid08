@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import DTO.NhanVien;
 
-public class MoveActivityTwo extends AppCompatActivity implements HangSo{
+public class MoveActivityTwo extends AppCompatActivity implements ConsTant {
 
     private Button btn_backOne;
     private TextView tv_sum;

@@ -10,7 +10,7 @@ import android.widget.EditText;
 
 import DTO.NhanVien;
 
-public class MainActivity extends AppCompatActivity  implements HangSo{
+public class MainActivity extends AppCompatActivity  implements ConsTant {
 
     private Button btn_clickone;
     private EditText et_one;
