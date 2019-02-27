@@ -8,10 +8,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import DTO.NhanVien;
+
 public class MoveActivityTwo extends AppCompatActivity implements HangSo{
 
     private Button btn_backOne;
     private TextView tv_sum;
+    private TextView tv_TTNhanVien;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -20,6 +23,7 @@ public class MoveActivityTwo extends AppCompatActivity implements HangSo{
         init();
         onClickBackActivityOne();
         tinhTong();
+        layTTNhanVien();
     }
 
     /*
@@ -28,6 +32,8 @@ public class MoveActivityTwo extends AppCompatActivity implements HangSo{
     private void init(){
         btn_backOne = (Button) findViewById(R.id.btn_clickbackone);
         tv_sum = (TextView) findViewById(R.id.tv_sum);
+        tv_TTNhanVien = (TextView) findViewById(R.id.tv_thongtinNV);
+
     }
 
     /*
@@ -55,5 +61,13 @@ public class MoveActivityTwo extends AppCompatActivity implements HangSo{
         int number2 =  Integer.parseInt(laythongtin.getString(NUMBERON2));
         int tong = number1 + number2;
         tv_sum.setText("Tổng: "+ tong);
+    }
+
+    /*
+    Thong tin Nhan Vien
+     */
+    private void layTTNhanVien(){
+        NhanVien nhanVien = (NhanVien) getIntent().getSerializableExtra(NHANVIENTT);
+        tv_TTNhanVien.setText("Id: "+nhanVien.getIdNV()+" Ten: "+nhanVien.getTenNV()+" Họ: "+nhanVien.getHoNv());
     }
 }

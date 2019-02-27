@@ -29,4 +29,14 @@
         android:textSize="32sp"
         android:textColor="#2600ff"
         android:background="#ffd900"/>
+    <TextView
+        android:id="@+id/tv_thongtinNV"
+        android:layout_below="@id/btn_clickbackone"
+        android:textSize="16sp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
 </RelativeLayout>

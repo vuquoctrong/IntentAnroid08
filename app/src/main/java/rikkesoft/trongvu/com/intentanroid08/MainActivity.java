@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import DTO.NhanVien;
+
 public class MainActivity extends AppCompatActivity  implements HangSo{
 
     private Button btn_clickone;
@@ -49,6 +51,8 @@ public class MainActivity extends AppCompatActivity  implements HangSo{
                 Bundle thongtin = new Bundle();
                 thongtin.putString(NUMBERON1,et_one.getText().toString());
                 thongtin.putString(NUMBERON2,et_two.getText().toString());
+                NhanVien nhanVien = new NhanVien(001,"Trọng","Vũ");
+                intent.putExtra(NHANVIENTT,nhanVien);
                 intent.putExtras(thongtin);
                 startActivity(intent);
 
@@ -64,8 +68,9 @@ public class MainActivity extends AppCompatActivity  implements HangSo{
             @Override
             public void onClick(View v) {
                 Intent intentCall = new Intent();
-                intentCall.setAction(Intent.ACTION_CALL);
-                intentCall.setData(Uri.parse("tel:039633113"));
+                intentCall.setAction(Intent.ACTION_VIEW);
+
+                intentCall.setData(Uri.parse(PATHGOOGLE));
                 startActivity(intentCall);
             }
         });
