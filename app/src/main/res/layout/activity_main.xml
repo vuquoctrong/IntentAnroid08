@@ -39,4 +39,14 @@
         android:textSize="32sp"
         android:textColor="#bbff00"
         android:background="#ff2200"/>
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_marginTop="32dp"
+        android:text="Call"
+        android:background="#ff0"
+        android:textColor="#001eff"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/btn_clickMovetwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </RelativeLayout>
